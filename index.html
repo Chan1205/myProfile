@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Seol | Software Engineer & AI-Driven Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">MS</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-name">Matthew Seol</h1>
+                    <p class="hero-subtitle">Software Engineer & AI-Driven Developer</p>
+                    <div class="animated-headline">
+                        <span class="headline-text" id="headline-text">Building AI-powered apps.</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Contact Me</a>
+                        <a href="Matthew Seol Resume.pdf" class="btn btn-secondary" id="download-resume" download>Download Resume</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="geometric-shape shape-1"></div>
+                    <div class="geometric-shape shape-2"></div>
+                    <div class="geometric-shape shape-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Computer Science student at The University of Texas at Dallas, pursuing a Bachelor of Science in Computer Science with an expected graduation in 2029. My passion lies in creating innovative software solutions that blend cutting-edge technology with practical applications.
+                    </p>
+                    <p>
+                        With hands-on experience in game development, AI-powered applications, and full-stack development, I've built projects ranging from AI-driven web applications to immersive 3D games. My technical journey is complemented by unique leadership experience from my service at the South Korea Defense Intelligence Command, where I served as an Interpreter/Translator and Squad Leader Nominee, developing strong cross-cultural communication and system development skills.
+                    </p>
+                    <p>
+                        I'm driven by the challenge of turning complex ideas into elegant code and creating digital experiences that make a difference. Whether it's building AI-powered recommendation systems or developing interactive games, I approach each project with curiosity, precision, and a commitment to excellence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Programming Languages</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">C#</span>
+                        <span class="skill-badge">HTML</span>
+                        <span class="skill-badge">CSS</span>
+                        <span class="skill-badge">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Tools & Frameworks</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">Bootstrap</span>
+                        <span class="skill-badge">Unity</span>
+                        <span class="skill-badge">Express.js</span>
+                        <span class="skill-badge">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Operating Systems</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">UNIX</span>
+                        <span class="skill-badge">Windows</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Database</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Gamearly Project -->
+                <div class="project-card" data-project="gamearly">
+                    <div class="project-image">
+                        <div class="project-placeholder">AI</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Gamearly – AI-Powered Game Finder</h3>
+                        <p class="project-description">Web application using HTML, CSS, JavaScript, Express.js, MongoDB, and OpenAI GPT API for AI-driven game recommendations.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Express.js</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">OpenAI API</span>
+                        </div>
+                        <button class="project-btn">View Details</button>
+                    </div>
+                </div>
+
+                <!-- 3D Horror Game -->
+                <div class="project-card" data-project="horror">
+                    <div class="project-image">
+                        <div class="project-placeholder">3D</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">3D Horror Game (Slenderman-Inspired)</h3>
+                        <p class="project-description">Immersive 3D horror game built with Unity and C#, featuring atmospheric gameplay and interactive environments.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Unity</span>
+                            <span class="project-tag">C#</span>
+                            <span class="project-tag">3D Game Development</span>
+                        </div>
+                        <button class="project-btn">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Snake Game -->
+                <div class="project-card" data-project="snake">
+                    <div class="project-image">
+                        <div class="project-placeholder">🐍</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Snake Game</h3>
+                        <p class="project-description">Classic Snake game implementation in C++ with modular design, demonstrating object-oriented programming principles.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">C++</span>
+                            <span class="project-tag">OOP</span>
+                            <span class="project-tag">Game Development</span>
+                        </div>
+                        <button class="project-btn">View Details</button>
+                    </div>
+                </div>
+
+                <!-- 2D Platformer -->
+                <div class="project-card" data-project="platformer">
+                    <div class="project-image">
+                        <div class="project-placeholder">2D</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">2D Platformer Game</h3>
+                        <p class="project-description">Side-scrolling platformer game developed with Unity and C#, featuring smooth character movement and level design.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Unity</span>
+                            <span class="project-tag">C#</span>
+                            <span class="project-tag">2D Game Development</span>
+                        </div>
+                        <button class="project-btn">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Dog Tinder -->
+                <div class="project-card" data-project="dog-tinder">
+                    <div class="project-image">
+                        <div class="project-placeholder">🐕</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Dog Tinder</h3>
+                        <p class="project-description">Front-end web application built with HTML, CSS, and Bootstrap, creating an interactive matching interface for dogs.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">Bootstrap</span>
+                            <span class="project-tag">Front-end</span>
+                        </div>
+                        <button class="project-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2024</div>
+                        <h3 class="timeline-title">Interpreter / Translator</h3>
+                        <h4 class="timeline-company">South Korea Defense Intelligence Command</h4>
+                        <p class="timeline-subtitle">Sergeant, Squad Leader Nominee</p>
+                        <p class="timeline-description">
+                            Led cross-cultural communication initiatives and contributed to system development projects. Demonstrated strong leadership skills while managing translation and interpretation tasks for critical intelligence operations. Developed expertise in technical documentation and cross-functional collaboration.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - Present</div>
+                        <h3 class="timeline-title">Private Tutor</h3>
+                        <h4 class="timeline-company">Math & English</h4>
+                        <p class="timeline-description">
+                            Provided personalized one-on-one instruction in mathematics and English, adapting teaching methods to individual learning styles. Tracked student progress and developed customized lesson plans that resulted in measurable academic growth and improved confidence.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019 - 2020</div>
+                        <h3 class="timeline-title">Sales Associate</h3>
+                        <h4 class="timeline-company">UNIQLO</h4>
+                        <p class="timeline-description">
+                            Collaborated with team members to ensure excellent customer service and efficient retail operations. Managed inventory, processed transactions, and maintained store presentation standards. Developed strong communication and problem-solving skills in a fast-paced environment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:mcs200005@utdallas.edu">mcs200005@utdallas.edu</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:8723603815">872-360-3815</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Dallas, TX</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Matthew Seol. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="modal-close" id="modal-close">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
