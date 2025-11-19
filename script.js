@@ -163,27 +163,37 @@ gsap.from('.about-text p', {
 gsap.from('.skill-category', {
     scrollTrigger: {
         trigger: '.skills',
-        start: 'top 70%'
+        start: 'top 70%',
+        toggleActions: 'play none none reverse'
     },
     opacity: 0,
     y: 50,
     duration: 0.8,
     stagger: 0.2,
-    ease: 'power3.out'
+    ease: 'power3.out',
+    immediateRender: false
 });
+
+// Set initial state for skill categories
+gsap.set('.skill-category', { opacity: 1, visibility: 'visible' });
 
 // Project cards animation
 gsap.from('.project-card', {
     scrollTrigger: {
         trigger: '.projects',
-        start: 'top 70%'
+        start: 'top 70%',
+        toggleActions: 'play none none reverse'
     },
     opacity: 0,
     y: 50,
     duration: 0.8,
     stagger: 0.15,
-    ease: 'power3.out'
+    ease: 'power3.out',
+    immediateRender: false
 });
+
+// Set initial state for project cards
+gsap.set('.project-card', { opacity: 1, visibility: 'visible' });
 
 // Timeline items animation
 gsap.from('.timeline-item', {
@@ -425,6 +435,18 @@ window.addEventListener('load', () => {
         opacity: 1,
         duration: 0.5,
         ease: 'power2.out'
+    });
+
+    // Ensure all grid items are visible on load
+    const skillCategories = document.querySelectorAll('.skill-category');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    skillCategories.forEach(category => {
+        gsap.set(category, { opacity: 1, visibility: 'visible' });
+    });
+
+    projectCards.forEach(card => {
+        gsap.set(card, { opacity: 1, visibility: 'visible' });
     });
 });
 
