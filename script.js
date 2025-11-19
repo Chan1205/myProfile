@@ -127,12 +127,7 @@ gsap.to('.shape-1', {
     ease: 'none'
 });
 
-gsap.to('.shape-2', {
-    rotation: -360,
-    duration: 15,
-    repeat: -1,
-    ease: 'none'
-});
+// Removed rotation animation for shape-2 - it now only uses the CSS float animation
 
 // Section animations on scroll
 const sections = document.querySelectorAll('section');
