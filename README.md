@@ -97,35 +97,6 @@ myProfileWebsite/
 - **GSAP (GreenSock)** - Advanced animations
 - **Google Fonts (Inter)** - Typography
 
-## 📝 Customization
-
-### Adding Your Resume PDF
-
-1. Add your resume PDF file to the project directory
-2. Update the download resume button in `index.html`:
-   ```html
-   <a href="your-resume.pdf" class="btn btn-secondary" download>Download Resume</a>
-   ```
-
-### Modifying Content
-
-- **Personal Information:** Edit the content in `index.html`
-- **Styling:** Modify colors, fonts, and layouts in `styles.css`
-- **Animations:** Adjust animation timings and effects in `script.js`
-
-### Color Palette
-
-To change colors, update the CSS variables in `styles.css`:
-```css
-:root {
-    --white: #FFFFFF;
-    --dark-navy: #00171F;
-    --navy: #003459;
-    --blue: #007EA7;
-    --light-blue: #00A8E8;
-}
-```
-
 ## 📱 Browser Support
 
 - Chrome (latest)
