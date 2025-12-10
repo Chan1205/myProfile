@@ -218,7 +218,8 @@ gsap.from('.contact-item', {
     x: -30,
     duration: 0.8,
     stagger: 0.15,
-    ease: 'power3.out'
+    ease: 'power3.out',
+    immediateRender: false
 });
 
 gsap.from('.contact-form', {
@@ -230,7 +231,8 @@ gsap.from('.contact-form', {
     x: 30,
     duration: 0.8,
     delay: 0.3,
-    ease: 'power3.out'
+    ease: 'power3.out',
+    immediateRender: false
 });
 
 // ============================================
