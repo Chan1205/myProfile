@@ -588,6 +588,10 @@ section {
     overflow: hidden;
 }
 
+.project-image--filled {
+    background: none;
+}
+
 .project-image img {
     width: 100%;
     height: 100%;
