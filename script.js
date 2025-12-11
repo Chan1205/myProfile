@@ -195,18 +195,7 @@ gsap.from('.project-card', {
 // Set initial state for project cards
 gsap.set('.project-card', { opacity: 1, visibility: 'visible' });
 
-// Timeline items animation
-gsap.from('.timeline-item', {
-    scrollTrigger: {
-        trigger: '.experience',
-        start: 'top 70%'
-    },
-    opacity: 0,
-    x: -50,
-    duration: 0.8,
-    stagger: 0.2,
-    ease: 'power3.out'
-});
+// Timeline items: show immediately (no scroll animation)
 
 // Contact section animation
 gsap.from('.contact-item', {
@@ -450,6 +439,9 @@ window.addEventListener('load', () => {
     projectCards.forEach(card => {
         gsap.set(card, { opacity: 1, visibility: 'visible' });
     });
+
+    // Refresh ScrollTrigger positions after assets load to honor initial scroll position
+    ScrollTrigger.refresh();
 });
 
 // ============================================

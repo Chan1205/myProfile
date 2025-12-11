@@ -717,6 +717,7 @@ section {
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 23, 31, 0.1);
     transition: all 0.3s ease;
+    min-width: 0;
 }
 
 .timeline-content:hover {
@@ -770,39 +771,46 @@ section {
     gap: 4rem;
     max-width: 1000px;
     margin: 0 auto;
+    position: relative;
+    align-items: stretch;
+}
+
+.contact-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: rgba(0, 126, 167, 0.12);
+    transform: translateX(-0.5px);
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    background: linear-gradient(145deg, rgba(0, 126, 167, 0.05) 0%, rgba(0, 168, 232, 0.05) 100%);
+    border: 1px solid rgba(0, 126, 167, 0.12);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 23, 31, 0.08);
 }
 
 .contact-item {
     display: flex;
     align-items: flex-start;
-    gap: 1.5rem;
-    padding: 1.5rem;
-    background: linear-gradient(135deg, #f5f7fa 0%, #e8f4f8 100%);
-    border-radius: 15px;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 126, 167, 0.08);
     transition: all 0.3s ease;
 }
 
 .contact-item:hover {
     transform: translateX(10px);
-    box-shadow: 0 5px 20px rgba(0, 126, 167, 0.2);
-}
-
-.contact-icon {
-    font-size: 2rem;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--gradient-1);
-    border-radius: 50%;
-    flex-shrink: 0;
+    box-shadow: 0 5px 20px rgba(0, 126, 167, 0.16);
 }
 
 .contact-details h3 {
@@ -826,6 +834,11 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    background: linear-gradient(145deg, rgba(0, 23, 31, 0.04) 0%, rgba(0, 126, 167, 0.06) 100%);
+    border: 1px solid rgba(0, 126, 167, 0.12);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 23, 31, 0.08);
 }
 
 .form-group {
@@ -1056,6 +1069,11 @@ section {
 
     .contact-content {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-content::before {
+        display: none;
     }
 
     .timeline {
@@ -1076,6 +1094,28 @@ section {
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .timeline {
+        padding-left: 0;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline-item {
+        padding-left: 0;
+    }
+
+    .timeline-marker {
+        display: none;
+    }
+
+    .timeline-content {
+        padding: 1.5rem;
     }
 }
 
