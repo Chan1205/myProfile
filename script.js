@@ -236,7 +236,7 @@ const modalBody = document.getElementById('modal-body');
 const projectDetails = {
     gamearly: {
         title: 'Gamearly – AI-Powered Game Finder',
-        description: 'A sophisticated web application that leverages artificial intelligence to provide personalized game recommendations. Built with modern web technologies and integrated with OpenAI\'s GPT API for intelligent content analysis and recommendations.',
+        description: 'Developed from September to November 2025. A sophisticated web application that leverages artificial intelligence to provide personalized game recommendations. Built with modern web technologies and integrated with OpenAI\'s GPT API for intelligent content analysis and recommendations.',
         features: [
             'AI-driven game recommendations using OpenAI GPT API',
             'Responsive and intuitive user interface',
